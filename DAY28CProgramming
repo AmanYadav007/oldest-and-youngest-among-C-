@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age1,age2,age3;
+    
+    cout<<"Enter Your Age user one :";
+    cin>>age1;
+    cout<<"Enter Your Age user two :";
+    cin>>age2;
+    cout<<"Enter Your Age user three :";
+    cin>>age3;
+    if(age1 > age2 && age2 > age3){
+        cout<<"User One is Oldest "<<age1<<" Years old"<<endl;
+    }
+    else if(age2 > age1 && age2 > age3){
+        cout<<"User Two is Oldest "<<age2<<" Years old"<<endl;
+    }
+    else if(age3 > age1 && age3 > age2){
+        cout<<"User Three is Oldest "<<age3<<" Years old"<<endl;
+    }
+    else{
+        cout<<"SAB KUCH KUCHNAHI hAI ";
+    }
+    
+    if(age1 < age2 && age2 < age3){
+        cout<<"User One is Youngest "<<age1<<" Years old"<<endl;
+    }
+    else if(age2 < age1 && age2 < age3){
+        cout<<"User Two is Youngest "<<age2<<" Years old"<<endl;
+    }
+    else if(age3 < age1 && age3 < age2){
+        cout<<"User Three is Youngest "<<age3<<" Years old"<<endl;
+    }
+    else{
+        cout<<"ALL ARE BHUDDHA ";
+    }
+    
+    
+    return 0;
+}
